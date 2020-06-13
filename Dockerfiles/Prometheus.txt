@@ -1,4 +1,4 @@
-FROM registry.redhat.io/ubi8/ubi:latest
+FROM centos:latest
 
 RUN dnf install -y wget 
 RUN wget https://github.com/prometheus/prometheus/releases/download/v2.18.1/prometheus-2.18.1.linux-amd64.tar.gz -O /prometheus-2.18.1.linux-amd64.tar.gz 
